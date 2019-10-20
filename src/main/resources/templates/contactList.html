@@ -1,0 +1,57 @@
+<div class="container-fluid">
+        <form id="">
+        <div class="row">
+            <div class="form-inline row" role="form">
+              
+                <div class="col-sm-7">
+                    <label for="type"control-label">Enter name</label> <input
+				type="text" ng-model="name" ng-blur="getContact(name)">
+				</div>
+                	<div class="col-sm-2" ">
+					<h4>
+						<a id="Create" name="Create"
+							class="btn btn-sm btn-primary btn-create text-right"
+							href="#/contact/new"><span
+							class="glyphicon glyphicon-plus-sign"></span> Create New</a>
+					</h4>
+				</div>
+                </div>
+                </div>
+                </form>
+
+           
+    <div id="search-results">
+        <table
+            class="table table-responsive table-bordered table-striped table-condensed"
+            width="100%">
+            <thead>
+                <tr class="bg-primary">
+               <!--  <th class="col-sm-2" ng-click="order('mv.id')">ID</th> -->
+               <th class="col-sm-3" ng-click="order('mv.name')">Name</th>
+                    <th class="col-sm-2" ng-click="order('mv.number')">Phone Number</th>
+
+                    <th class="col-sm-2">Actions</th>
+                </tr>
+            </thead>
+
+            <tbody id="search-results-body">
+                <tr
+                    data-ng-repeat="result in contacts">
+                   <!--  <td>{{result.id}}</td> -->
+                    <td>{{result.name}}</td>
+                    <td>{{result.number}}</td>
+                    <td><a 
+                        href="#/contact/edit/{{result.id}}"><span id="tooltip"
+                            tooltip="edit" class="glyphicon glyphicon-edit" /></span></a>&nbsp; <a
+                        ng-click="remove($index,result.id)"><span tooltip="delete"
+                            class="glyphicon glyphicon-trash" /></span></a></td>
+                </tr>
+            </tbody>
+        </table>
+        <pagination total-items="totalItems" ng-model="currentPage"
+            ng-change="pageChanged()" class="pagination-sm pull-right"
+            items-per-page="itemsPerPage"></pagination>
+          
+            </div>
+    </div>
+
