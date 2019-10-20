@@ -1,4 +1,4 @@
-var app = angular.module('contact', []);
+var contact = angular.module('contact', []);
 app.factory('ContactService', ContactService)
  {
 	function ContactService(RestService) {

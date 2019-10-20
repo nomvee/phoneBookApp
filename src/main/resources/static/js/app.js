@@ -4,7 +4,7 @@ var contact = angular.module('contact',
 	function routerConfig($routeProvider) {
 
 		$routeProvider.when('/contact/new', {
-			templateUrl : 'templatecontactDetails.html',
+			templateUrl : 'template/contactDetails.html',
 			controller : 'ContactDetailsController',
 			resolve : {
 				getUserAccess : function() {
