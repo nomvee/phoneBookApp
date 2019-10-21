@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    comments = "version: 1.2.0.Final, compiler: javac, environment: Java 1.8.0_211 (Oracle Corporation)"
+    comments = "version: 1.2.0.Final, compiler: javac, environment: Java 1.8.0_222 (Oracle Corporation)"
 )
 @Component
 public class PhoneBookMapperImpl implements PhoneBookMapper {

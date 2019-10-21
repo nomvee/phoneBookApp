@@ -1,36 +1,37 @@
 <!DOCTYPE HTML>
-<html  >
+<html x-ng-app='contact'>
 <head>
-	  <title></title>
-	  <meta charset="ISO-8859-1" />
-	<meta name="description" content="" />
-		<meta name="viewport" content="width=device-width" />
-	  <link rel="stylesheet" src="/lib/bootstrap/3.3.5/css/bootstrap.css"></link>
-	  <link rel="stylesheet" src="style/style.css"></link>
-	  <link rel="stylesheet" 	src="lib/bootstrap/3.3.5/css/bootstrap-theme.css"></link>
-	  <link rel="stylesheet" 	src="lib/bootstrap/3.3.5/css/bootstrap-theme.min.css"></link>
+<script type="text/javascript"
+	src="lib/jquery/dataTables/jquery.dataTables.js"></script>
+<meta charset="ISO-8859-1" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width" />
+<title>Phone Book System</title>
+<script type="text/javascript" src="/lib/jquery/jquery-1.11.2.js"></script>
+<script type="text/javascript" src="/lib/jquery/jquery-ui-1.11.2.js"></script>
 
-	  
-	  <script type="text/javascript" src="/lib/angular/angular.js"></script>
-	  <script type="text/javascript" src="/lib/angular/angular-route.js"></script>
-	  
-<script type="text/javascript" src="lib/angular/angular-mocks.js"></script>
-<script type="text/javascript" src="lib/angular/angular-route.js"></script>
-<script type="text/javascript" src="lib/angular/angular-messages.js"></script>
-	  
-	  
-	  <script src="js/contact.details.controller.js"></script>
-	  <script src="js/contact.list.controller.js"></script>
-	  <script src="js/navbar.directive.js"></script>
-	  <script src="js/app.js"></script>  
-	  
+<script type="text/javascript" src="/lib/angular/angular.js"></script>
+<script type="text/javascript" src="/lib/angular/angular-route.js"></script>
+
+<script type="text/javascript" src="/lib/angular/angular-mocks.js"></script>
+<script type="text/javascript" src="/lib/angular/angular-route.js"></script>
+<script type="text/javascript" src="/lib/angular/angular-messages.js"></script>
+
+<link rel="stylesheet" src="/lib/bootstrap/3.3.5/css/bootstrap.css"></link>
+<link rel="stylesheet" src="/style/style.css"></link>
+<link rel="stylesheet" src="/lib/bootstrap/3.3.5/css/bootstrap-theme.css"></link>
+<link rel="stylesheet" src="/lib/bootstrap/3.3.5/css/bootstrap-theme.min.css"></link>
+
+<script src="js/contact.details.controller.js"></script>
+<script src="js/contact.list.controller.js"></script>
+<script src="js/navbar.directive.js"></script>
+<script src="js/app.js"></script>
+
 </head>
 <body>
 	<div class="container-fluid">
-<div class="row">
-
+		<div class="row">
 			<div class="col-sm-12">
-
 				<nav class="navbar navbar-inverse">
 					<div class="container-fluid">
 						<div class="navbar-header">
@@ -38,17 +39,12 @@
 						</div>
 						<ul class="nav navbar-nav navbar-center">
 							<li><a href="#/contact">Contacts</a></li>
-	
-
 						</ul>
-					
 					</div>
 				</nav>
-
-
 			</div>
 		</div>
-		<!-- <nav-bar></nav-bar> -->		
+		<!-- <nav-bar></nav-bar> -->
 		<div class="ng-view"></div>
 	</div>
 
